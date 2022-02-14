@@ -1,87 +1,87 @@
-# Fase 1. Opzetten werkomgeving
+# Phase 1. Work environment setup
 
-In deze cursus maak je gebruik van verschillende softwarepakketten en tools. In deze fase installeren we de nodige applicaties en maken de nodige configuratie-aanpassingen om efficiënt te kunnen werken.
+In this course you will make use of different software packages and tools. In this phase we will install and configure the necessary applications for an efficient work environment.
 
-## Installatie software
+## Software Installation 
 
-Dit heb je nodig:
+This is what you need:
 
-- Een Git client ([Git CLI](https://git-scm.com), [Gitkraken](https://git-scm.com), ...)
-- Een LaTeX-distributie:
+- A Git client ([Git CLI](https://git-scm.com), [Gitkraken](https://git-scm.com), ...)
+- A LaTeX-distribution:
     - Windows: [MikTeX](https://miktex.org) of [TeX live](https://www.tug.org/texlive/) (aanbevolen in combinatie met VS Code)
     - MacOS X: [MacTeX](https://www.tug.org/mactex/)
     - Linux: [TeX live](https://www.tug.org/texlive/))
-- Een LaTeX IDE of editor met ondersteuning voor LaTeX:
-    - [Texstudio](https://www.texstudio.org) is een volledige IDE, specifiek voor LaTeX
-    - [Visual Studio Code](https://code.visualstudio.com) heeft ook zeer goede ondersteuning, maar vraagt wel wat werk [om goed te configureren](https://dev.to/ucscmozilla/how-to-create-and-compile-latex-documents-on-visual-studio-code-3jbk)
-- [JabRef](https://www.jabref.org), een bibliografische databank specifiek voor LaTeX
-- Een editor met ondersteuning voor Markdown is ook handig
-    - [Visual Studio Code](https://code.visualstudio.com) heeft uitstekende ondersteuning (o.a. HTML preview met `Ctrl+Shift+V`)
+- A LaTeX IDE or editor with LaTeX support:
+    - [Texstudio](https://www.texstudio.org) is a complete IDE, specifically for LaTeX
+    - [Visual Studio Code](https://code.visualstudio.com) has good support, but requires some fiddling [configuring](https://dev.to/ucscmozilla/how-to-create-and-compile-latex-documents-on-visual-studio-code-3jbk)
+- [JabRef](https://www.jabref.org), a bibliografic database specifically for LaTeX
+- An editor with Markdown support is also convenient
+    - [Visual Studio Code](https://code.visualstudio.com) has excellent support (i.e. HTML preview with `Ctrl+Shift+V`)
     - [Typora](https://typora.io)
 
 ### Windows
 
-We raden aan om de [Chocolatey Package Manager](https://chocolatey.org/install) te gebruiken voor het beheren van geïnstalleerde applicaties.
+We suggest to use [Chocolatey Package Manager](https://chocolatey.org/install) for the management of installed applications.
 
-Open een Powershell of CMD terminal als Administrator en selecteer uit onderstaande commando's de specifieke packages die je wil installeren. Merk op dat de tekst volgend op het hekje (`#`) commentaar is en dus niet moet overgetikt worden!
+Open a Powershell or CMD terminal as Administrator and select from the commands listed below for the specific packages you'd like to install. Please notice that text behind the (`#`) symbol is not executed, hence does not need to be copied and is defined as comment!
 
 ```powershell
 choco install -y git        # CLI client
-choco install -y gitkraken  # Grafische Git client (optioneel)
-choco install -y miktex     # LaTeX distributie
-choco install -y texlive    # Alternatieve LaTeX distro (kies 1 van de 2!)
+choco install -y gitkraken  # Graphical Git client (optional)
+choco install -y miktex     # LaTeX distribution
+choco install -y texlive    # Alternatieve LaTeX distro (choose either one, but only 1!)
 choco install -y texstudio  # Complete LaTeX IDE
-choco install -y vscode     # Visual Studio Code (optioneel)
-choco install -y JabRef     # Bibliografische databank
-choco install -y typora     # Markdown editor (optioneel)
+choco install -y vscode     # Visual Studio Code (optional)
+choco install -y JabRef     # Bibliographic database
+choco install -y typora     # Markdown editor (optional)
 ```
 
 ### MacOS X
 
-We raden aan om de [Homebrew package manager](https://brew.sh/) te gebruiken voor het beheren van geïnstalleerde applicaties. *Let op: deze werkwijze is niet recentelijk getest, feedback welkom!*
+We suggest to use the [Homebrew package manager](https://brew.sh/) for the management of installed applications. *Please notice: this procedure has not been tested recently, any feedback will be appreciated!*
 
-Open een Terminal en selecteer uit ondersttaande commando's de specifieke packages die je wil installeren. Merk op dat de tekst volgend op het hekje (`#`) commentaar is en dus niet moet overgetikt worden!
+Open a Terminal and select from the commands below the specific packages that you would like to install. Please notice that text behind the (`#`) symbol is not executed, hence does not need to be copied and is defined as comment!
 
 ```bash
 brew install git               # CLI client
-brew install --cask gitkraken  # Grafische Git client (optioneel)
-brew install --cask mactex     # LaTeX distributie
+brew install --cask gitkraken  # Graphical Git client (optional)
+brew install --cask mactex     # LaTeX distribution
 brew install --cask texstudio  # Complete LaTeX IDE
-brew install --cask visual-studio-code # VS Code (optioneel)
-brew install --cask jabref     # Bibliografische databank
-brew install --cask typora     # Markdown editor (optioneel)
+brew install --cask visual-studio-code # VS Code (optional)
+brew install --cask jabref     # Bibliographic database
+brew install --cask typora     # Markdown editor (optional)
 ```
 
 ### Linux (Debian/Ubuntu)
 
-Linux-gebruikers weten dat er verschillen zijn bij het installeren van software, afhankelijk van de distributie. Hier volgen instructies voor distributies uit de Debian-familie (Ubuntu, Mint, enz.). Voor andere distributies kunnen het commando en package-namen verschillen, maar meestal weten jullie wel hoe dat precies moet.
+Linux users know that there are differences in software installation procedures, depending on the distribution. A few instructions for distributions from the Debian-family (Ubuntu, Mint, enz.). For other distributions the command and package names can differ, but mostly Linux users are aware of this.
 
 ```bash
 sudo apt install git        # CLI client
-sudo apt install texlive    # LaTeX distributie
+sudo apt install texlive    # LaTeX distribution
 sudo apt install texstudio  # Complete LaTeX IDE
-sudo apt install jabref     # Bibliografische databank
+sudo apt install jabref     # Bibliographic database
 
 wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
-sudo dpkg -i gitkraken-amd64.deb  # Grafische Git client (optioneel)
+sudo dpkg -i gitkraken-amd64.deb  # Graphical Git client (optional)
 
-# Download eerst de .deb package van https://code.visualstudio.com/Download
+# Download the .deb package first from https://code.visualstudio.com/Download
 sudo dpkg -i ./code_*.deb   # VS Code
 ```
 
-De **TeX live** distributie is enorm uitgebreid en werd onderverdeeld in verschillende packages. `texlive` is de basisinstallatie, `texlive-full` de complete distributie (incl. onderdelen die jij nooit nodig zult hebben). Je kan dus kiezen: ofwel installer je TeX live volledig, ofwel de basisinstallatie, aangevuld met de extra's die je nodig hebt, bv. `texlive-science`, `texlive-xetex`, enz. Voor een volledig overzicht van wat beschikbaar is kan je `apt search texlive` uitproberen. Je zal verder moeten ondervinden wat je precies nodig hebt en wat je eventueel nog extra moet installeren.
+De **TeX live** distribution is very extensive and was divided into different packages. `texlive` is the basic installation, `texlive-full` the complete distribution (including parts you might never need). The choice is yours: either you install TeX live completely, either the basic installation complemented with the extra features you need, e.g. `texlive-science`, `texlive-xetex`, etc. For a detailed overview of availble features you can explore the `apt search texlive`. You will have to find out for yourself what you really need and what you have to install additionally.
 
-## Configuratie Git, Github
+## Configuration Git, Github
 
-Normaal gezien heb je intussen al een Github-account en een persoonlijke Github-repository aangemaakt via de Github Classroom link die je op Chamilo kon vinden.
+Normally, you should have already made a Github-account and personal Github repository via the Github Classroom link that you can find on the Chamilo platform.
 
-### Basisconfiguratie
+### Basic configuration
 
-Voordat je Git gaat gebruiken op je laptop is het belangrijk om enkele **basisinstellingen** goed te configureren. Als je dit niet doet, worden jouw commits niet altijd correct onder jouw naam naar Github opgeladen. Vooral bij groepswerk is dit problematisch, want jouw bijdrage is dan niet zichtbaar!
+Before you will use Git on your laptop it is important to configure some **basic settings**. If you won't, your commits will not always be pushed correctly to github in your name. Especially for group assignments, this is a problem as it is impossible to distinguish between your contributions and your fellow students'!
 
-- Koppel je **HoGent-emailadres** aan je Github account (je kan meerdere adressen registreren). Op die manier kan je aanspraak maken op het [Github student developer pack](https://education.github.com/pack), wat je gratis toegang geeft tot een aantal in principe betalende producten en diensten.
-- [Genereer een SSH-sleutelpaar](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) als je dit nog niet gedaan hebt en [registreer het op Github](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
-- Stel je naam en (HOGENT-)emailadres in. Via de CLI kan dit zo:
+- Connect your **HoGent email address** to you Github account (you can register multiple addresses). This way, you can claim a [Github student developer pack](https://education.github.com/pack), allowing free access to some paying products and services.
+- [Generate an SSH key pair](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) if you haven't already and [register it on Github](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+- Set up your name and (HOGENT-) email. Using the CLI:
 
     ```console
     git config --global user.name "Pieter Stevens"
@@ -89,7 +89,7 @@ Voordat je Git gaat gebruiken op je laptop is het belangrijk om enkele **basisin
     git config --global github.user PieterStevens
     ```
 
-- Pas [enkele basisinstellingen](https://git-scm.com/book/nl/v2/Git-aanpassen-Git-configuratie) aan:
+- Pas [some basic settings](https://git-scm.com/book/nl/v2/Git-aanpassen-Git-configuratie) aan:
 
     ```bash
     git config --global push.default simple
@@ -98,19 +98,19 @@ Voordat je Git gaat gebruiken op je laptop is het belangrijk om enkele **basisin
     git config --global init.defaultBranch main
     ```
 
-    Ga eens in de [documentatie](https://git-scm.com/book/nl/v2/Git-aanpassen-Git-configuratie) zoeken wat deze commando's precies doen.
+    Please go through the [documentation](https://git-scm.com/book/nl/v2/Git-aanpassen-Git-configuratie) to find out what these commands do.
 
-- Maak een kloon van je Github-repo op je laptop.
+- Clone your Github-repo onto your laptop.
 
-### Aanbevelingen
+### Recommendations
 
-We gaan er van uit dat je met Git/Github kan werken! Enkele aanbevelingen.
+We assume that you are able to work with Git/Github! Some recommendations:
 
-- **Vermijd** werken via de **Github webinterface** voor het aanpassen/toevoegen van bestanden. Maak een lokale kloon van je repository op je laptop en werk via de command-line of met een goede grafische client.
-- **Commit en push** zo vaak mogelijk!
-- Creëer [**atomaire commits**](https://dev.to/cbillowes/why-i-create-atomic-commits-in-git-kfi). Je github-repository is een backup waarmee je kan vermijden dat je werk verloren gaat.
-- Voorzie je commits van een duidelijke beschrijving in de [**commit messsage**](https://cbea.ms/git-commit/).
-- De standaard voor opgemaakte tekst op Github is [Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). Neem de tijd om correcte **Markdown-documenten** te leren schrijven en hoe de opmaak te bekijken (in een editor of op Github).
+- **Avoid** using the **Github webinterface** for adding/adapting file content. Clone your repository locally onto your laptop and use the command-line or a decent GUI. 
+- **Commit and push** as often as possible!
+- Create [**atomic commits**](https://dev.to/cbillowes/why-i-create-atomic-commits-in-git-kfi). Your github-repository is a backup that helps you from losing your work in progress. 
+- Provide a clear description for your commits in the [**commit messsage**](https://cbea.ms/git-commit/).
+- The standard for formatted text on Github is [Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). Please take your time to learn how to write a **Markdown-document** and explore its layout (in an editor or on Github).
 
 ## LaTeX
 
