@@ -110,53 +110,53 @@ We assume that you are able to work with Git/Github! Some recommendations:
 - **Commit and push** as often as possible!
 - Create [**atomic commits**](https://dev.to/cbillowes/why-i-create-atomic-commits-in-git-kfi). Your github-repository is a backup that helps you from losing your work in progress. 
 - Provide a clear description for your commits in the [**commit messsage**](https://cbea.ms/git-commit/).
-- The standard for formatted text on Github is [Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). Please take your time to learn how to write a **Markdown-document** and explore its layout (in an editor or on Github).
+- The standard for formatted text on Github is [Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). Please take your time to learn how to write a **Markdown document** and explore its layout (in an editor or on Github).
 
 ## LaTeX
 
-LaTeX bestaat al enkele decennia. Waar het vroeger enkel mogelijk was om in een LaTeX-document ASCII-tekst te gebruiken, is het nu volledig UTF-8 compatibel. De meeste LaTeX-gerelateerde tools hebben in hun basisinstellingen echter nog steeds die oorspronkelijke werkwijze geconfigureerd. Enkele aanpassingen zijn dus nodig!
+LaTeX has been around for some decades. Before, it was only possible to write a LaTeX document using ASCII characters while today it is fully UTF-8 compatible. Most LaTeX related tools still have those original settings. Therefore some configuration adjustments are needed!
 
-### TeXStudio configureren
+### TeXStudio configuration
 
-Controleer deze instellingen via menu-item *Options > Configure TeXstudio*
+Check these settings using menu item *Options > Configure TeXstudio*
 
 - Build:
-    - Default Compiler: **XeLaTeX** (UTF-8 compatibel, mogelijkheid om TTF-lettertypes te gebruiken, enz.) in plaats van PDFLaTeX (enkel ASCII, PostScript lettertypes, enz.)
-    - Default Bibliography tool: **`biber`** (UTF-8 compatibel, ondersteuning voor APA-referenties, ...) in plaats van `bibtex` (enkel ASCII, geep APA-referenties, ...)
+    - Default Compiler: **XeLaTeX** (UTF-8 compatible, possibility to use TTF (true type font) etc.) instead of PDFLaTeX (only ASCII, PostScript fonts, etc.)
+    - Default Bibliography tool: **`biber`** (UTF-8 compatible, APA referencing support, ...) instead of `bibtex` (only ASCII, no APA referencing, ...)
 - Commands:
-    - XeLaTeX: `xelatex -synctex=1 -interaction=nonstopmode -shell-escape %.tex` (voeg de optie `-shell-escape` toe)
+    - XeLaTeX: `xelatex -synctex=1 -interaction=nonstopmode -shell-escape %.tex` (add the option `-shell-escape`)
 - Editor:
     - Indentation mode: *Indent and Unindent Automatically*
-    - Replace Indentation Tab by Spaces: *Aanvinken*
-    - Replace Tab in Text by spaces: *Aanvinken*
+    - Replace Indentation Tab by Spaces: *Check*
+    - Replace Tab in Text by spaces: *Check*
     - Replace Double Quotes: *English Quotes: ``''*
 
-Om te testen of TeXStudio goed werkt, kan je het sjabloon voor de paper ( `paper/FamilienaamVoornaamJaarRM.tex`) gebruiken. Verander eerste de bestandsnaam in je eigen naam (familienaam eerst) en het jaartal (bv. `DeSmetJan2022RM.tex`).
+To test proper functioning of TeXStudio, you can use the template for the paper ( `paper/FamilienaamVoornaamJaarRM.tex`) gebruiken. First change the file name to your own name (surname first) and the year (e.g. `DeSmetJan2022RM.tex`).
 
-Kies *Tools > Build & View* (of functietoets `F5`) om deze te compileren in een PDF-bestand. **Let op!** Als het resulterende PDF-bestand geen bibliografie bevat, moet je die nog apart compileren. Dit kan via het menu *Tools > Bibliography* of functietoets `F8`. Daarna doe je op nieuw *Build & View*.
+Choose *Tools > Build & View* (or function key `F5`) to compile into a PDF file. **Plese notice!** If the resulting PDF file does not contain a bibliography, you will have to compile it separately. You can do this using the menu *Tools > Bibliography* or function key `F8`. Afterwards *Build & View* again.
 
-Veel functionaliteiten van LaTeX zitten in aparte packages die niet noodzakelijk standaard geïnstalleerd zijn. De eerste keer dat je een bestand compileert, is het dan ook mogelijk dat er extra packages moeten gedownload worden. MiKTeX op Windows zal een pop-up tonen om je toestemming te vragen, bevestig dit. De eerste keer compileren kan enkele minuten duren zonder dat je feedback krijgt over wat er gebeurt. Even geduld, dus. Op Linux werkt dit misschien niet en moet je opzoeken welke extra packages `texlive` je nog moet installeren voor de gewenste functionaliteit.
+Many LaTeX functionalities are available in separate packages that are not necessarily installed by default. The first time you compile a file, there is a great chance that you will need to download extra packages. MiKTeX on Windows will provide you with a pop up window to ask for your permission to install them. If so, just confirm. The first compilation might take some minutes without any feedback on what is going on, just remain patient. On Linux this might not work automatically, and you will need to find out what extra `texlive` packages are needed to reach the desired functionality.
 
-Indien er zich fouten voordoen bij de compilatie, kan je onderaan in het tabblad *Log* een overzicht krijgen van de foutboodschappen. Wanneer je bij je lector hulp vraagt, is het belangrijk om de **exacte foutboodschap** mee te geven. Dat kan het makkelijkst door het tabblad *Logbestand* te selecteren en de gehele inhoud te kopiëren.
+In case of any compilation errors, you can find the tab page *Log* to get an overview of the error messages. When asking your lecturer for help, it is important to provide the **exact error message**. The easiest way to do this, is to select and copy the whole tab page *Log file*. 
 
 ### Visual Studio Code
 
-VS Code is een krachtige teksteditor met zeer goede ondersteuning voor tientallen programmeer- en scriptingtalen en gestructureerde tekstformaten als HTML, Markdown, enz. Ook voor LaTeX zijn er goede plugins. Als je al gewend bent om VS Code te gebruiken, dan kan je het even goed ook gebruiken voor LaTeX. Het nadeel is misschien wel dat het wat complexer is om Code goed te configureren, in die mate zelfs dat het ons hier te ver zou leiden om een volledig stappenplan te voorzien.
+VS Code is a powerful text editor with good support for many programming and scripting languages. Moreover, structured text formats like HTML, Markdown, etc. Also for LaTeX there are decent plugins. When you are familiar with VS Code already, you might want to use it for editing LaTeX files as well. The disadvantage is the configuration of VS Code. Being rather complex, we will not describe an extensive road map here. 
 
-Installeer in elk geval [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) van James Yu. Pas de configuratie aan zodat de `xelatex` compiler gebruikt wordt in plaats van `pdflatex`. Lees [de documentatie](https://github.com/James-Yu/LaTeX-Workshop/wiki) voor meer info en inspireer je eventueel op [dit VS Code configuratiebestand](https://github.com/bertvv/dotfiles/blob/master/.config/Code/User/settings.json) om LaTeX Workshop in te stellen.
+In any case install James Yu's [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop). Adjust the configuration so the `xelatex` compiler is used instead of the `pdflatex` one. Read [the documentation](https://github.com/James-Yu/LaTeX-Workshop/wiki) for more information and get inspired by [this VS Code configuration file](https://github.com/bertvv/dotfiles/blob/master/.config/Code/User/settings.json) to configure LaTeX Workshop.
 
 ### JabRef
 
-[JabRef](http://www.jabref.org/) is een GUI voor het bewerken van BibTeX-bestanden, een soort database van bronnen uit de wetenschappelijke of vakliteratuur voor een LaTeX-document. De interface en instellingen veranderen nogal eens tussen versies, dus het is mogelijk dat deze instructies niet meer exact werken.
+[JabRef](http://www.jabref.org/) is a GUI for editing BibTeX files, a kind of database with sources from the academic or professional literature for a LaTeX document. The interface and settings vary between versions, so it is possible that these instructions are not up to date anymore depending on the version.
 
-Binnen de LaTeX-wereld is er een apart subsysteem voor het correct opmaken van een referentielijst of bibliografie. Het "oude" systeem heet BibTeX en is vaak de standaard in LaTeX-editors. Het sjabloon voor de paper en ook dat voor de bachelorproef zijn echter gebaseerd op een modernere vervanger, BibLaTeX/biber. Pas Jabref aan om standaard het laatste te gebruiken.
+Inside the LaTeX world, there is a separate subsystem to correctly set up a reference list or bibliography. The "old" system is called BibTeX and is often the default option in LaTeX editors. The template for the paper and also the one used for your bachelor thesis is based on a modern replacement, BibLaTeX/biber. Adapt Jabref to use the latter by default.
 
-- Kies in het menu voor *Options > Preferences > General* en kies onderaan voor de optie "Default bibliography mode" voor "biblatex".
-- Kies in het *Preferences*-venster voor de categorie *File* en geef een directory op voor het bijhouden van PDFs van de gevonden bronnen onder *Main file directory*. Het is heel interessant om de gevonden artikels te downloaden en onder die directory bij te houden. Nog beter is om als naam van het bestand de BibTeX key te nemen (typisch naam van de eerste auteur + jaartal, bv. Knuth1998.pdf). Je kan het bestand dan makkelijk openen vanuit Jabref.
+- Choose *Options > Preferences > General* in the menu and choose the option "Default bibliography mode" at the bottom for "biblatex".
+- Choose in the *Preferences* window the category *File* and supply a directory for storing the PDF files of the found sources for the option *Main file directory*. It is very advised to download and store the found articles and keep them in the specified directory. Even better is to use the BibTeX key as name for the stored file (typically the surname of the first author + year, e.g. Knuth1998.pdf). This is convenient to open the file from within Jabref.
 
 ## Checklist
 
-- [ ] De nodige software is geïnstalleerd.
-- [ ] De basisinstellingen van Git zijn waar nodig aangepast. Bij een commit naar Github is duidelijk wie de auteur is.
-- [ ] TeXstudio of VS Code zijn geconfigureerd voor gebruik.
-- [ ] Het sjabloon compileert zonder fouten, in de PDF is ook de (voorbeeld-)bibliografie opgenomen.
+- [ ] The necessary software is installed.
+- [ ] The basic Git settings are adapted where required. On committing, it is obvious who the author is. 
+- [ ] TeXstudio or VS Code are configured for use.
+- [ ] the template compiles without errors, in the generated PDF the (example) bibliography is present.

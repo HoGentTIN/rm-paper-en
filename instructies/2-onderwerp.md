@@ -1,8 +1,8 @@
-# Fase 2. Een onderzoeksvraag formuleren
+# Phase 2. Formulating a research question
 
-De opdracht in deze fase is makkelijk te beschrijven, maar misschien niet zo eenvoudig uit te voeren!
+The assignment in this phase is easily described, but hard to carry out!
 
-- Zoek een onderwerp binnen ICT dat volgens jou geschikt is om een bachelorproef informatica over te schrijven.
-- Formuleer een onderzoeksvraag en deelvragen.
-- Noteer deze in het daarvoor bestemde bestand `notas/2-notas-onderwerp.md`
-- Als je definitief gekozen hebt, kan je de inleiding van de paper schrijven in het LaTeX-document in de directory `paper/` (waarvan je de naam zou moeten aangepast hebben naar je eigen naam).
+- Find a subject in the ICT world that, according to your opinion, is suitable to write a bachelor thesis about.
+- Formulate a research question and subquestions.
+- Write them down in the designated file: `notas/2-notas-onderwerp.md`
+- When you have made your final choice, you can write the introduction to the paper in the LaTeX document in the directory `paper/` (where you should have alreay adapted the name to your own).

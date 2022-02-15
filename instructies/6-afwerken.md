@@ -1,10 +1,10 @@
-# Stap 6. Afwerken
+# Stap 6. Finishing up
 
-Werk de paper volledig af!
+Finish the paper completely!
 
-- Vervolledig de tekst en zorg dat alle nodige onderdelen aanwezig zijn.
-- Schrijf een samenvatting. Let er op dat een samenvatting **geen inleiding** is, maar dat je de *volledige tekst* synthetiseert.
-- Controleer alle TODO's in de commentaar van het LaTeX-document. Als een TODO gerealiseerd is, verwijder dan die commentaar!
-- Doe een grondige controle van de finale PDF, zowel qua vorm (marges, afbeeldingen, referenties, bibliografie, ...) als inhoud (taalfouten, schrijfstijl, ...).
-- Zorg dat de laatste revisie van alle bestanden in deze repository gecommit zijn en gesynchroniseerd met Github!
-- Dien tenslotte de PDF in op Chamilo, onder Opdrachten, vóór de opgegeven deadline!
+- Complete the text and make sure you have all required sections present.
+- Write an abstract. Make sure that your abstract is **no introduction**, but synthesizes the *whole text*.
+- Check for all TODO's in the comments of the LaTeX document. If a TODO is finished, remove the comment!
+- Perform a thorough check of the final version of your manuscript(PDF), both for form (margins, pictures, references, bibliography, ...) and content (language errors, writing style, ...).
+- Ensure that the last revision of all files in the repository have been committed and synchronised with Github!
+- Submit the manuscript **timely** on the Chamilo platform, in the assignment section!
