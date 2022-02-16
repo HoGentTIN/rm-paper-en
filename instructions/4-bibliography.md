@@ -1,6 +1,6 @@
-# Phase 4. Bibliografic database, literature study
+# Phase 4. Bibliographic database, literature study
 
-In this phase you will process the found information sources to a continuous introductory text about the chosen bachelor thesis subject. this is probably the phase that will require the most effort and time. 
+In this phase you will process the found information sources to a continuous introductory text about the chosen bachelor thesis subject. This is probably the phase that will require the most effort and time. 
 
 Don't postpone taking this up, otherwise you will not timely reach your deadlines for the assignments at the end of the semester!
 
@@ -9,7 +9,7 @@ Don't postpone taking this up, otherwise you will not timely reach your deadline
     - All necessary information is present (tab page Required Fields), e.g.
         - Electronic/Online/WWW sources must have a "url" and "urldate" field !
         - A Book should have a publisher;
-        - An Article should have a Journaltitle, year and number;
+        - An Article should have a Journal title, year and number;
         - ...
     - Author names should be in the correct format (`Surname, first Name and surname, first name and ...`)
     - Each source should have a unique Bibtex key (typically AuthorSurNameYear, e.g. Knuth1985)

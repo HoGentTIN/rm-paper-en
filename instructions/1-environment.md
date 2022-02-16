@@ -8,11 +8,11 @@ This is what you need:
 
 - A Git client ([Git CLI](https://git-scm.com), [Gitkraken](https://git-scm.com), ...)
 - A LaTeX-distribution:
-    - Windows: [MikTeX](https://miktex.org) of [TeX live](https://www.tug.org/texlive/) (aanbevolen in combinatie met VS Code)
+    - Windows: [MikTeX](https://miktex.org) of [TeX live](https://www.tug.org/texlive/) (recommended)
     - MacOS X: [MacTeX](https://www.tug.org/mactex/)
     - Linux: [TeX live](https://www.tug.org/texlive/))
 - A LaTeX IDE or editor with LaTeX support:
-    - [Texstudio](https://www.texstudio.org) is a complete IDE, specifically for LaTeX
+    - [Texstudio](https://www.texstudio.org) is a complete IDE, specifically for LaTeX (recommended)
     - [Visual Studio Code](https://code.visualstudio.com) has good support, but requires some fiddling [configuring](https://dev.to/ucscmozilla/how-to-create-and-compile-latex-documents-on-visual-studio-code-3jbk)
 - [JabRef](https://www.jabref.org), a bibliografic database specifically for LaTeX
 - An editor with Markdown support is also convenient
@@ -23,7 +23,7 @@ This is what you need:
 
 We suggest to use [Chocolatey Package Manager](https://chocolatey.org/install) for the management of installed applications.
 
-Open a Powershell or CMD terminal as Administrator and select from the commands listed below for the specific packages you'd like to install. Please notice that text behind the (`#`) symbol is not executed, hence does not need to be copied and is defined as comment!
+Open a Powershell or CMD terminal as Administrator and select from the commands listed below for the specific packages you'd like to install. Please notice that text behind the (`#`) symbol is not executed, hence does not need to be copied and is interpreted as a comment!
 
 ```powershell
 choco install -y git        # CLI client
@@ -40,7 +40,7 @@ choco install -y typora     # Markdown editor (optional)
 
 We suggest to use the [Homebrew package manager](https://brew.sh/) for the management of installed applications. *Please notice: this procedure has not been tested recently, any feedback will be appreciated!*
 
-Open a Terminal and select from the commands below the specific packages that you would like to install. Please notice that text behind the (`#`) symbol is not executed, hence does not need to be copied and is defined as comment!
+Open a Terminal and select from the commands below the specific packages that you would like to install. Please notice that text behind the (`#`) symbol is not executed, hence does not need to be copied and is interpreted as comment!
 
 ```bash
 brew install git               # CLI client
@@ -54,7 +54,7 @@ brew install --cask typora     # Markdown editor (optional)
 
 ### Linux (Debian/Ubuntu)
 
-Linux users know that there are differences in software installation procedures, depending on the distribution. A few instructions for distributions from the Debian-family (Ubuntu, Mint, enz.). For other distributions the command and package names can differ, but mostly Linux users are aware of this.
+Linux users know that there are differences in software installation procedures, depending on the distribution. A few instructions for distributions from the Debian-family (Ubuntu, Mint, enz.). For other distributions the command and package names can differ, but Linux users are generally aware of this.
 
 ```bash
 sudo apt install git        # CLI client
@@ -69,7 +69,7 @@ sudo dpkg -i gitkraken-amd64.deb  # Graphical Git client (optional)
 sudo dpkg -i ./code_*.deb   # VS Code
 ```
 
-De **TeX live** distribution is very extensive and was divided into different packages. `texlive` is the basic installation, `texlive-full` the complete distribution (including parts you might never need). The choice is yours: either you install TeX live completely, either the basic installation complemented with the extra features you need, e.g. `texlive-science`, `texlive-xetex`, etc. For a detailed overview of availble features you can explore the `apt search texlive`. You will have to find out for yourself what you really need and what you have to install additionally.
+De **TeX live** distribution is very extensive and was divided into different packages. `texlive` is the basic installation, `texlive-full` the complete distribution (including parts you might never need). The choice is yours: either you install TeX live completely, either the basic installation complemented with the extra features you need, e.g. `texlive-science`, `texlive-xetex`, etc. For a detailed overview of available features you can explore the `apt search texlive`. You will have to find out for yourself what you really need and what you have to install additionally.
 
 ## Configuration Git, Github
 
@@ -89,7 +89,7 @@ Before you will use Git on your laptop it is important to configure some **basic
     git config --global github.user PieterStevens
     ```
 
-- Pas [some basic settings](https://git-scm.com/book/nl/v2/Git-aanpassen-Git-configuratie) aan:
+- Adapt [some basic settings](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration) :
 
     ```bash
     git config --global push.default simple
@@ -98,7 +98,7 @@ Before you will use Git on your laptop it is important to configure some **basic
     git config --global init.defaultBranch main
     ```
 
-    Please go through the [documentation](https://git-scm.com/book/nl/v2/Git-aanpassen-Git-configuratie) to find out what these commands do.
+    Please go through the [documentation](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration) to find out what these commands do.
 
 - Clone your Github-repo onto your laptop.
 
@@ -131,7 +131,7 @@ Check these settings using menu item *Options > Configure TeXstudio*
     - Replace Tab in Text by spaces: *Check*
     - Replace Double Quotes: *English Quotes: ``''*
 
-To test proper functioning of TeXStudio, you can use the template for the paper ( `paper/FamilienaamVoornaamJaarRM.tex`) gebruiken. First change the file name to your own name (surname first) and the year (e.g. `DeSmetJan2022RM.tex`).
+To test proper functioning of TeXStudio, you can use the template for the paper ( `paper/SurnameFirstnameYearRM.tex`) gebruiken. First change the file name to your own name (surname first) and the year (e.g. `DeSmetJan2022RM.tex`).
 
 Choose *Tools > Build & View* (or function key `F5`) to compile into a PDF file. **Plese notice!** If the resulting PDF file does not contain a bibliography, you will have to compile it separately. You can do this using the menu *Tools > Bibliography* or function key `F8`. Afterwards *Build & View* again.
 
@@ -152,7 +152,7 @@ In any case install James Yu's [LaTeX Workshop](https://marketplace.visualstudio
 Inside the LaTeX world, there is a separate subsystem to correctly set up a reference list or bibliography. The "old" system is called BibTeX and is often the default option in LaTeX editors. The template for the paper and also the one used for your bachelor thesis is based on a modern replacement, BibLaTeX/biber. Adapt Jabref to use the latter by default.
 
 - Choose *Options > Preferences > General* in the menu and choose the option "Default bibliography mode" at the bottom for "biblatex".
-- Choose in the *Preferences* window the category *File* and supply a directory for storing the PDF files of the found sources for the option *Main file directory*. It is very advised to download and store the found articles and keep them in the specified directory. Even better is to use the BibTeX key as name for the stored file (typically the surname of the first author + year, e.g. Knuth1998.pdf). This is convenient to open the file from within Jabref.
+- Choose in the *Preferences* window the category *File* and supply a directory for storing the PDF files of the found sources for the option *Main file directory*. It is strongly advised to download and store the found articles and keep them in the specified directory. Even better is to use the BibTeX key as name for the stored file (typically the surname of the first author + year, e.g. Knuth1998.pdf). This is convenient to open the file from within Jabref.
 
 ## Checklist
 
