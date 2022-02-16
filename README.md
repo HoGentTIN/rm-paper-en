@@ -1,18 +1,19 @@
 # Research Methods - paper
 
-Deze Github-repository bevat al de nodige informatie om de paper die je voor het vak Research Methods moet voorbereiden en schrijven.
+This Github-repository contains all the necessary information you need to prepare and write the paper for the subject Research Methods.
 
-Het examencijfer voor het vak is voor 100% gebaseerd op deze paper, dus het is belangrijk dat je de instructies volgt en de taken zo goed mogelijk uitvoert. Door het werk op de te delen in verschillende fasen met een concreet doel, wordt het hopelijk voldoende haalbaar om dit te realiseren. Hieronder vind je een kort overzicht van de fasen, telkens met een link naar een meer gedetailleerde toelichting.
+The examen grade will be entirely based on this paper, making it important to follow the instructions meticulously. By dividing your work into different phases with specific targets, hopefully you will manage to reach the required targets. Below a short overview of the different phases, each with a link to a more specific explanation.
 
-1. [Opzetten werkomgeving](instructies/1-werkomgeving.md)
-2. [Onderwerp kiezen](instructies/2-onderwerp.md)
-3. [Vakliteratuur raadplegen](instructies/3-vakliteratuur.md)
-4. [Literatuurstudie](instructies/4-literatuurstudie.md)
-5. [De methodologie uitwerken](instructies/5-methodologie.md)
-6. [Afwerken paper](instructies/6-afwerken.md)
+1. [Work environment setup](instructions/1-environment.md)
+2. [Subject choice](instructions/2-subject.md)
+3. [Consulting literature](instructions/3-literature.md)
+4. [Literature study](instructions/4-bibliography.md)
+5. [Methodology](instructions/5-methodology.md)
+6. [Paper wrapup](instructions/6-final.md)
 
-Qua timing moet je voor elke fase een tweetal weken rekenen. Het meeste werk zit wellicht in fase 4. Als je hier vooraf rekening mee houdt en nu al de nodige tijd inplant in je agenda, kom je op het einde van het semester niet in problemen met de deadlines voor andere projecten!
+Estimation is two weeks work for each phase. Most work is probably in phase 4. If you plan this beforehand, you will not encounter any surprises at the end of the semester when deadlines need to be met (for other assignments or projects too)!
 
-De directory [notas](notas/) bevat enkele Markdown-bestanden die je kan gebruiken om losse nota's bij te houden. We hebben er enkele toegevoegd als voorbeeld voor de fasen waar het zeker zin heeft, maar je mag er uiteraard zelf ook nieuwe toevoegen.
+the directory [notes](notes/) contains a few Markdown files you can use to write down some notes. We added some examples, but feel free to make some new ones. 
 
-De directory [paper](paper/) bevat de LaTeX-broncode voor de te schrijven paper met een voorstel van een bachelorproefonderwerp. Het bestand `FamilienaamVoornaamJaar.tex` moet je hernoemen naar je eigen naam en het huidige jaar voordat je er begint in te schrijven. Het bestand `bibliografie.bib` is een bibliografische databank die je kan openen met JabRef. Als je afbeeldingen wil invoegen in de paper, dan kan je die opslaan in de subdirectory `img/`.
+The directory [paper](paper/) contains the LaTeX source code for the research proposal paper for a bachelor thesis, subject to this assignment. 
+The file `SurnameFirstnameYearRM.tex` needs renaming to your own name and year before you start editing it. The file `bibliografie.bib` is a bibliographic database that you can open and edit using JabRef. When you intend to use images in your paper, please save them in the `img/` subdirectory.
