@@ -2,7 +2,7 @@
 
 This Github-repository contains all the necessary information you need to prepare and write the paper for the subject Research Methods.
 
-The examen grade will be entirely based on this paper, making it important to follow the instructions meticulously. By dividing your work into different phases with specific targets, hopefully you will manage to reach the required targets. Below a short overview of the different phases, each with a link to a more specific explanation.
+The exam grade will be entirely based on this paper, making it important to follow the instructions meticulously. By dividing your work into different phases with specific targets, hopefully you will manage to reach the required targets. Below a short overview of the different phases, each with a link to a more specific explanation.
 
 1. [Work environment setup](instructions/1-environment.md)
 2. [Subject choice](instructions/2-subject.md)
