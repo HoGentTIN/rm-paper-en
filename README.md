@@ -4,8 +4,8 @@ This Github-repository contains all the necessary information you need to prepar
 
 The exam grade will be entirely based on this paper, making it important to follow the instructions meticulously. By dividing your work into different phases with specific targets, hopefully you will manage to reach the required targets. Below a short overview of the different phases, each with a link to a more specific explanation.
 
-1. [Work environment setup](instructions/1-environment.md)
-2. [Subject choice](instructions/2-subject.md)
+1. [Subject choice](instructions/1-subject.md)
+2. [Work environment setup](instructions/2-environment.md)
 3. [Consulting literature](instructions/3-literature.md)
 4. [Literature study](instructions/4-bibliography.md)
 5. [Methodology](instructions/5-methodology.md)
