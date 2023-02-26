@@ -1,4 +1,4 @@
-# Phase 1. Work environment setup
+# Phase 2. Work environment setup
 
 In this course you will make use of different software packages and tools. In this phase we will install and configure the necessary applications for an efficient work environment.
 
