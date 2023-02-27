@@ -154,9 +154,14 @@ Inside the LaTeX world, there is a separate subsystem to correctly set up a refe
 - Choose *Options > Preferences > General* in the menu and choose the option "Default bibliography mode" at the bottom for "biblatex".
 - Choose in the *Preferences* window the category *File* and supply a directory for storing the PDF files of the found sources for the option *Main file directory*. It is strongly advised to download and store the found articles and keep them in the specified directory. Even better is to use the BibTeX key as name for the stored file (typically the surname of the first author + year, e.g. Knuth1998.pdf). This is convenient to open the file from within Jabref.
 
+## Write the introduction
+
+If you chose a final topic in the previous phase, you can write the introduction of the paper in the LaTeX document in the `paper/` directory (which you should have renamed to match your own name(s)).
+
 ## Checklist
 
 - [ ] The necessary software is installed.
 - [ ] The basic Git settings are adapted where required. On committing, it is obvious who the author is. 
 - [ ] TeXstudio or VS Code are configured for use.
-- [ ] the template compiles without errors, in the generated PDF the (example) bibliography is present.
+- [ ] The template compiles without errors, in the generated PDF the (example) bibliography is present.
+- [ ] You've written out the introduction of your research subject
